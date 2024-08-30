@@ -4,7 +4,7 @@
 This project is part of the Metacrafters Poly Proof Advanced Course, Module 3. 
 &nbsp;
 
-In this project, we have to build a circuit using `circom`, compile a `Verifier Contract` and deploy it to the `Mumbai Testnet`
+In this project, we have to build a circuit using `circom`, compile a `Verifier Contract` and deploy it to the `sepolia Testnet`
 
 &nbsp;
 
@@ -20,7 +20,7 @@ In this project, we have to build a circuit using `circom`, compile a `Verifier 
 pragma circom 2.0.0;
 
 
-template MyAwesomeCircuit () {  
+template ayushnode () {  
 
    // input signal  
    signal input a;  
@@ -76,7 +76,7 @@ template NOT() {
     out <== 1 + in - 2*in;
 }
 
-component main = MyAwesomeCircuit();
+component main = ayushnode();
 ```
 
 &nbsp;
@@ -111,9 +111,8 @@ The circuit has been verified for the following input `A: 0` and `B: 1`
     ```
 - Deploy the verifier Contract
     ```
-    npx hardhat run scripts/deploy.ts --network mumbai
+    npx hardhat run scripts/deploy.ts --network sepolia
     ```
     &nbsp;
 The script will compile the contract and deploy it onto the Mumbai Testnet. The address of the contract will be printed on the console. 
-
 
